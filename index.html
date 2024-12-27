@@ -21,7 +21,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- JavaScript Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>-->
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/style.css">
@@ -122,21 +122,38 @@
             <img src="assets/images/slider/250px/logobon.png" alt="logo">
             <nav>
                 <ul>
-                    <li><a href="#Coaching">Coaching individuel</a></li>
-                    <li><a href="#Coachings">Coaching collectif</a></li>
-                    <li><a href="#Programmes">Programmes</a></li>
+                    <!-- Lien vers la page de Coaching individuel -->
+                    <li><a href="coaching_individuel.html">Coaching individuel</a></li>
+
+                    <!-- Lien vers la page de Coaching collectif -->
+                    <li><a href="coaching_collectif.html">Coaching collectif</a></li>
+
+                    <!-- Lien vers la page des Programmes -->
+                    <li><a href="programmes.html">Programmes</a></li>
+
                     <li><a href="#Contact">Contact</a></li>
-                    <li><a class="social-link" href="https://www.instagram.com/L'Sport.coaching/?hl=fr" target="_blank">
-                            <img src="assets/images/instagram.png" alt="instagram"></a>
+
+                    <!-- Lien vers Instagram -->
+                    <li>
+                        <a class="social-link" href="https://www.instagram.com/L'Sport.coaching/?hl=fr" target="_blank">
+                            <img src="assets/images/instagram.png" alt="instagram">
+                        </a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
 
+
     <main>
 
         <div id="about">
+            <!-- <video width="320" height="240" controls>
+                <source src="assets/vidéo/télécharger.htm" type="video/mp4">
+                <source src="chemin/vers/votre-video.ogv" type="video/ogg">
+                <source src="chemin/vers/votre-video.webm" type="video/webm">
+                Votre navigateur ne supporte pas la balise vidéo.
+            </video>-->
             <div id="about-me">
                 <h2 class="about-me__title">Coach sportive pour femme à Lyon</h2>
                 <h3 class="about-me__introduction" id="ariaDescriptionL'sport"></h3>
@@ -157,15 +174,14 @@
 
             <nav>
                 <ul>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#Contact">Me contacter</a></li>
                 </ul>
             </nav>
         </div>
 
 
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
-
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <!-- Indicateurs -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
@@ -177,28 +193,25 @@
             <!-- Slides -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <p>10 % de réduction pour 2 programmes achetés <br>
-                        15 % de réduction à partir de 3 programmes achetés</p>
+                    <p>10 % de réduction pour 2 programmes achetés <br> 15 % de réduction à partir de 3 programmes
+                        achetés</p>
                 </div>
                 <div class="carousel-item">
-                    <p>Vous vous demandez : <br>
-                        Comment perdre du poids ?<br>
-                        Comment faire disparaître ma cellulite ?<br>
-                        Puis-je faire du sport pendant ma grossesse et l’allaitement ?<br>
-                        J’ai peur de prendre des « gros muscles » si je fais de la musculation ?<br>
-                        Comment allier le travail, les enfants, la maison...et rajouter du sport ?<br>
-                        Comment avoir un ventre plat, des fesses bombées... ?<br>
-                        Je suis là pour répondre à vos questions et vous aider à trouver la solution selon vos
-                        prédispositions et votre situation.</p>
+                    <p>Vous vous demandez : <br> Comment perdre du poids ?<br> Comment faire disparaître ma cellulite
+                        ?<br>
+                        Puis-je faire du sport pendant ma grossesse et l’allaitement ?<br> J’ai peur de prendre des «
+                        gros
+                        muscles » si je fais de la musculation ?<br> Comment allier le travail, les enfants, la
+                        maison...et
+                        rajouter du sport ?<br> Comment avoir un ventre plat, des fesses bombées... ?<br> Je suis là
+                        pour
+                        répondre à vos questions et vous aider à trouver la solution selon vos prédispositions et votre
+                        situation.</p>
                 </div>
             </div>
 
             <!-- Flèches de navigation -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouse
-
-            <!-- Flèches de navigation -->
-            <button class=" carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
@@ -208,8 +221,17 @@
             </button>
         </div>
 
+
+
+
+
+
+
+
+
+
         <div class="Textes">
-            <img src="assets/images/altère.png" alt="altère">
+            <img src="assets/images/90.jpg" alt="accessoire">
             <p>Mon approche: qu’est ce que le coaching chez l’sport?<br>
 
                 Je vous propose des séances de musculation progressives, variées et motivantes qui ont fait leurs
@@ -224,7 +246,7 @@
                 Avec de la régularité dans votre pratique et une bonne hygiène de vie vous verrez rapidement des
                 résultats.
             </p>
-            <img src="assets/images/slider/250px/fond-arbre.jpg" alt="arbre">
+
         </div>
 
         <!-- Rectangle noir avec 6 titres et icônes -->
@@ -278,6 +300,7 @@
                 </div>
                 <div class="picture right">
                     <img src="assets/images/logobon.png" alt="logo L'Sport">
+
                 </div>
             </div>
         </div>
@@ -290,6 +313,59 @@
         <span>Tél: 05 89 85 85 85.</span>
         <span>Du lundi au vendredi de 10h à 19h</span>
     </footer>
+
+
+    <!-- Inclure le JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+
+    <script>
+        var myCarousel = document.querySelector('#carouselExample');
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 3000,  // Durée du défilement
+            ride: 'carousel'
+        });
+    </script>
+
+    <!--<script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const carouselInner = document.querySelector(".carousel-inner");
+            const items = document.querySelectorAll(".carousel-item");
+            const prevButton = document.querySelector(".carousel-control-prev");
+            const nextButton = document.querySelector(".carousel-control-next");
+            let currentIndex = 0;
+
+            // Fonction pour mettre à jour le carrousel
+            const updateCarousel = (index) => {
+                carouselInner.style.transform = `translateX(-${index * 100}%)`;
+            };
+
+            // Fonction suivante
+            nextButton.addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % items.length;
+                updateCarousel(currentIndex);
+            });
+
+            // Fonction précédente
+            prevButton.addEventListener("click", () => {
+                currentIndex = (currentIndex - 1 + items.length) % items.length;
+                updateCarousel(currentIndex);
+            });
+
+            // Défilement automatique toutes les 3 secondes
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % items.length;
+                updateCarousel(currentIndex);
+            }, 3000);
+        });
+
+
+
+    </script>-->
+
+
 </body>
 
 </html>

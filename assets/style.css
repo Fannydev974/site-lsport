@@ -126,35 +126,48 @@ h1 {
 
 }
 
+
+
+
 body .carousel-inner {
     margin-left: 14%;
-    padding-right: 25%;
-    margin-top: 62px;
+    padding-right: 13%;
+    margin-top: 54px;
+    width: 87%;
 }
 
-
 .carousel-item {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 50px;
     font-weight: 600;
     font-size: 1.2rem;
     color: #C28282;
-    /* background: linear-gradient(#dcdcdc, #C28282);*/
-    background-color: #dcdcdc;
+    background-color: #e8e6e5;
     border: 1px solid #C28282;
     border-radius: 8px;
+    overflow: hidden;
+}
+
+.carousel-item p {
+    margin: 0;
+    max-height: 100%;
+    overflow: auto;
+    /* Ajoute une barre de défilement si nécessaire */
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    /* background-color: rgba(0, 0, 0, 0.5);*/
-    border-radius: 50%;
     background-color: #D8AF54;
+    border-radius: 50%;
 }
 
-body .carousel-indicator {
-    margin-right: 11%;
-}
+
+
+
 
 
 .picture.left::before {
@@ -184,7 +197,7 @@ body .carousel-indicator {
     /*padding-block: 100px;*/
     position: relative;
     border-radius: 0;
-    box-shadow: 2px 5px 23px #8d8689;
+    box-shadow: 2px 30px 23px #8d8689;
 }
 
 #about-me {
@@ -278,6 +291,29 @@ header a {
 
 }
 
+
+.Textes {
+    display: flex;
+    gap: 20px;
+}
+
+.Textes img {
+    width: 40%;
+    margin: 30px;
+}
+
+.Textes p {
+    display: flex;
+    font-size: larger;
+    align-items: center;
+    font-weight: lighter;
+    width: 57%;
+    margin: 50px;
+    color: #000;
+
+}
+
+
 header a {
     font-size: 1.1em;
     padding: 10px;
@@ -292,9 +328,7 @@ header a:hover {
     /* Effet de survol pour les liens dans header */
 }
 
-/* Rectangle marron + icones */
 
-/* Chaque feature (icône + titre) */
 .feature {
     text-align: center;
     /* Centre l'image et le texte */
@@ -408,16 +442,25 @@ header a:hover {
 
 
 
-/*.picture.right::before {
-    content: ' ';
-    background-color: #8a4903;
+.picture.right::before {
+    content: "Lyon 69000 a domicile, en extérieur ou en salle Programmes en ligne";
+    white-space: pre-line;
+    background-color: #dcdcdc;
     width: 374px;
     height: 329px;
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
-}*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+}
 
 #Contact .container {
     display: flex;
@@ -483,15 +526,15 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-.carousel-item .active {
+/*.carousel-item .active {
     width: 100%;
 
-}
+}*/
 
-.responsive {
+/*.responsive {
     max-width: 100%;
     height: auto;
-}
+}*/
 
 footer {
     text-align: center;
