@@ -1,0 +1,525 @@
+/*
+#DA765E orange foncé
+#EBBDA3 orange clair
+#BE7575 orange rouge
+#D8AF54 jaune moutarde
+#F2D394 jaune clair
+#C28282 prune clair
+*/
+
+
+body {
+    max-width: 1920px;
+    margin: 10px;
+    background-color: #dcdcdc;
+}
+
+
+* {
+    font-family: 'Inter', 'arial',
+        sans-serif;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styles supplémentaires pour la mise en page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.top-contact {
+    display: flex;
+    gap: 71%;
+    margin-top: 10px;
+    color: #9c7070;
+}
+
+
+.top-header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 55px;
+    padding-block: 5px;
+    align-items: flex-start;
+    /*border: 2px solid black;*/
+    padding-top: 26px;
+}
+
+.top-header a[href="#Contact"] {
+    border-radius: 15px 15px 15px 0;
+    width: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DA765E;
+
+}
+
+.top-header a {
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.top-header img {
+    width: 60px;
+    height: 60px;
+}
+
+.name {
+    font-size: 26px;
+    font-weight: bolder;
+    color: #9f270e;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+
+ol,
+ul {
+    /**petits points**/
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+    justify-content: end;
+    font-size: larger;
+    color: #8a4903;
+
+}
+
+*/ li a {
+    color: #DA765E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+li {
+    padding-inline: 10px;
+    display: flex;
+    color: #DA765E;
+
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.social-link img {
+    width: 30px;
+    color: #000;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+body .carousel-inner {
+    margin-left: 14%;
+    padding-right: 25%;
+    margin-top: 62px;
+}
+
+
+.carousel-item {
+    text-align: center;
+    padding: 50px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #C28282;
+    /* background: linear-gradient(#dcdcdc, #C28282);*/
+    background-color: #dcdcdc;
+    border: 1px solid #C28282;
+    border-radius: 8px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    /* background-color: rgba(0, 0, 0, 0.5);*/
+    border-radius: 50%;
+    background-color: #D8AF54;
+}
+
+body .carousel-indicator {
+    margin-right: 11%;
+}
+
+
+.picture.left::before {
+    content: ' ';
+    background: linear-gradient(to bottom right, #9c7070, #f9d1d1);
+    width: 374px;
+    height: 329px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+.picture img {
+    width: 100%;
+    border-radius: 52%;
+}
+
+/* Style pour la section #about */
+#about {
+    display: flex;
+    flex-direction: column;
+    /* Empile les éléments verticalement */
+    background: linear-gradient(to top right, #f3f3f3 0%, #F2D394 50%, #DA765E 100%);
+    /*padding-inline: 100px;*/
+    /*padding-block: 100px;*/
+    position: relative;
+    border-radius: 0;
+    box-shadow: 2px 5px 23px #8d8689;
+}
+
+#about-me {
+    flex: 2;
+    text-align: center;
+    /* Centrer le texte du contenu */
+}
+
+.about-me__title {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 45px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me__introduction {
+    font-family: 'Spectral';
+    font-weight: 800;
+    font-style: italic;
+    width: 60%;
+    margin: 0 auto;
+    /* Centrer l'introduction */
+}
+
+#about-me p {
+    width: 80%;
+    font-size: larger;
+    font-weight: 700;
+    color: #BE7575;
+    margin-bottom: 40px;
+    margin-left: 110px
+}
+
+/* Style du conteneur de navigation dans #about */
+#about nav {
+    display: flex;
+    justify-content: center;
+    /* Centrer les liens horizontalement */
+    width: 100%;
+}
+
+#about nav ul {
+    list-style: none;
+    /* Supprimer les puces de la liste */
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    /* Espacement entre les liens */
+}
+
+#about nav ul li {
+    margin: 0;
+}
+
+#about nav ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: #DA765E;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 15px 15px 15px 0;
+    transition: background-color 0.3s ease;
+}
+
+#about nav ul li a:hover {
+    background-color: #D8AF54;
+
+}
+
+/* Style spécifique aux autres liens (à ne pas affecter dans #about) */
+.top-contact a,
+header a {
+    text-decoration: none;
+    color: inherit;
+    /* Conserver la couleur héritée */
+}
+
+.top-contact a.contact-mail {
+    color: #BE7575;
+
+}
+
+.top-contact a.contact-mail i {
+    display: flex;
+    margin-right: 10px;
+    color: #9c7070;
+    gap: 10px;
+
+}
+
+header a {
+    font-size: 1.1em;
+    padding: 10px;
+    background-color: transparent;
+    /* Pas de fond pour les liens du header */
+    color: #333;
+    /* Couleur de texte par défaut */
+}
+
+header a:hover {
+    color: #0f5326;
+    /* Effet de survol pour les liens dans header */
+}
+
+/* Rectangle marron + icones */
+
+/* Chaque feature (icône + titre) */
+.feature {
+    text-align: center;
+    /* Centre l'image et le texte */
+    width: calc(33.33% - 2em);
+    /* 3 éléments par ligne avec espace */
+    box-sizing: border-box;
+    /* Inclut les marges et paddings dans la largeur */
+}
+
+/* Icônes */
+.feature i {
+    font-size: 50px;
+    /* Taille de l'icône */
+    margin-bottom: 0.5em;
+    /* Espacement avec le texte */
+    color: #DA765E;
+    /* Couleur blanche pour le fond noir */
+}
+
+/* Titres sous les icônes */
+.feature h4 {
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: bold;
+    color: black;
+}
+
+/*Animation*/
+
+/* Animation */
+@keyframes slideFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styles pour le rectangle et les icônes */
+.features {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /*background-color: white;*/
+    /* Fond noir */
+    color: white;
+    /* Texte blanc */
+    padding: 2em 0;
+    /* Espacement interne */
+    display: flex;
+    flex-wrap: wrap;
+    /* Permet de passer à une nouvelle ligne après 3 éléments */
+    justify-content: center;
+    /* Centre les colonnes */
+    gap: 2em;
+    /* Espace entre les éléments */
+    width: 100%;
+    /* Prend toute la largeur */
+    box-sizing: border-box;
+    /* Inclut les paddings dans la largeur */
+    border-radius: 75px 75px 80px 0px;
+    background: linear-gradient(to top right, #f3f3f3 0%, #dcdcdc 50%, #F2D394 100%);
+    border: 2px solid #BE7575;
+}
+
+.feature {
+    opacity: 0;
+    /* Initialement invisible */
+    animation: slideFromTop 1s ease forwards;
+    /* L'animation */
+}
+
+/* Délai pour chaque icône */
+.feature:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.feature:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.feature:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.feature:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.feature:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.feature:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+
+
+#Contact {
+    margin: auto;
+    background-color: #e8e6e5;
+    position: relative;
+    padding-inline: 100px;
+    padding-block: 100px;
+}
+
+
+
+/*.picture.right::before {
+    content: ' ';
+    background-color: #8a4903;
+    width: 374px;
+    height: 329px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}*/
+
+#Contact .container {
+    display: flex;
+}
+
+
+
+.picture {
+    flex: 1;
+    margin: 0 20px;
+    z-index: 0;
+}
+
+.picture p {
+    color: #BE7575;
+    font-size: larger;
+    font-weight: 800;
+}
+
+.picture span {
+    color: #BE7575;
+    font-weight: 700;
+}
+
+
+.form-container {
+    flex: 2;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #D8AF54;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: flex-start;
+    color: #BE7575;
+}
+
+form input {
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px;
+    height: 2.5em;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px;
+    height: 5em;
+    line-height: 2.5em;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #BE7575;
+    padding: .5em 1em;
+    cursor: pointer;
+}
+
+.carousel-item .active {
+    width: 100%;
+
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: white;
+}
+
+footer span {
+    color: #BE7575;
+    font-weight: 600;
+}
+
+@media all and (max-width: 1180px) {
+    .picture {
+        flex: 2;
+    }
+
+    #about,
+    #Contact .container {
+        align-items: center;
+    }
+
+    .about-me__title {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+
+    #about-me h6,
+    #about-me p {
+        width: 100%;
+    }
+}
